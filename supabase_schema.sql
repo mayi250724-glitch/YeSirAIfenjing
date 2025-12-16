@@ -228,8 +228,8 @@ CREATE INDEX idx_video_generations_user_id ON video_generations(user_id);
 
 -- Vercel部署配置 - 环境变量示例
 -- 在Vercel项目设置中添加以下环境变量：
--- NEXT_PUBLIC_SUPABASE_URL="your-supabase-url"
--- NEXT_PUBLIC_SUPABASE_ANON_KEY="your-supabase-anon-key"
+-- NEXT_PUBLIC_SUPABASE_URL="https://tqdsryjstdpyguatoecm.supabase.co"
+-- NEXT_PUBLIC_SUPABASE_ANON_KEY="sb_publishable_-4C7VpqgRXBI2PydOcAsOw_X6J0MQWs"
 -- SUPABASE_SERVICE_ROLE_KEY="your-supabase-service-role-key"
 
 -- 示例：创建默认API配置
