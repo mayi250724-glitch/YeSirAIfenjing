@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yesir - 导演请就位！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cinema: {
+                900: '#0a0a0a',
+                800: '#171717',
+                700: '#262626',
+                accent: '#f59e0b', // Amber 500
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'system-ui', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a0a;
+        color: #e5e5e5;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #171717;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #404040;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #525252;
+      }
+
+      /* Print Styles */
+      @media print {
+        @page {
+          margin: 1cm;
+          size: auto;
+        }
+        body {
+          background-color: white !important;
+          color: black !important;
+          -webkit-print-color-adjust: exact !important;
+          print-color-adjust: exact !important;
+        }
+        .no-print {
+          display: none !important;
+        }
+        /* Override text colors for print */
+        h1, h2, h3, h4, h5, h6, p, span, div {
+          color: black !important;
+          text-shadow: none !important;
+        }
+        
+        /* Force cards to look good */
+        .print-card, .print-card-wrapper > div {
+            border: 1px solid #ddd !important;
+            background-color: white !important;
+            box-shadow: none !important;
+            color: black !important;
+            page-break-inside: avoid;
+            break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        /* Specific overrides for dark elements in ShotCard */
+        .bg-\[\#1a1a1a\], .bg-\[\#171717\], .bg-black, .bg-\[\#111\] {
+            background-color: white !important;
+            border-color: #eee !important;
+        }
+        
+        /* Ensure images print */
+        img {
+            max-width: 100% !important;
+            page-break-inside: avoid;
+        }
+        
+        /* Hide scrollbars/backgrounds */
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        /* Fix Layout for print */
+        #printable-content {
+            padding: 0 !important;
+            margin: 0 !important;
+            max-width: 100% !important;
+        }
+        /* Prevent page breaks inside critical elements */
+        .print-break-inside-avoid {
+            break-inside: avoid;
+        }
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lottie-react": "https://aistudiocdn.com/lottie-react@^2.4.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-BDeI_Itl.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>

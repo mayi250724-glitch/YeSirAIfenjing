@@ -1,0 +1,24 @@
+{
+  "name": "多模态视频-优化过移动四个api共用api前端配置加登陆这个定了",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "lucide-react": "^0.555.0",
+    "react-dom": "^19.2.0",
+    "@google/genai": "^1.30.0",
+    "lottie-react": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
